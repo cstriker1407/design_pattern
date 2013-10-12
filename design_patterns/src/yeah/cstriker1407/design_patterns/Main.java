@@ -1,9 +1,9 @@
-package design_patterns;
+package yeah.cstriker1407.design_patterns;
 
-import design_patterns.singleton.Singleton_doublecheck;
-import design_patterns.singleton.Singleton_enum;
-import design_patterns.singleton.Singleton_hungry;
-import design_patterns.singleton.Singleton_lazy;
+import yeah.cstriker1407.design_patterns.singleton.Singleton_doublecheck;
+import yeah.cstriker1407.design_patterns.singleton.Singleton_enum;
+import yeah.cstriker1407.design_patterns.singleton.Singleton_hungry;
+import yeah.cstriker1407.design_patterns.singleton.Singleton_lazy;
 
 public class Main 
 {

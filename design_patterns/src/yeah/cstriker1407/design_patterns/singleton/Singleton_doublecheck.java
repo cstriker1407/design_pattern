@@ -1,4 +1,4 @@
-package design_patterns.singleton;
+package yeah.cstriker1407.design_patterns.singleton;
 
 public class Singleton_doublecheck
 {
