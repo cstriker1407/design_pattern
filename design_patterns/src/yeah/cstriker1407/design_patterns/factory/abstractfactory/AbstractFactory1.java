@@ -2,59 +2,70 @@ package yeah.cstriker1407.design_patterns.factory.abstractfactory;
 
 public class AbstractFactory1
 {
-	public static void getSender()
+	public static void test()
 	{
-		Provider provider = new MailProvider();
-		Sender aSender =  provider.produce();
-		Sender bSender =  provider.produce();
+		Provider provider = new WinProvider();
+		provider.produce().draw();
+		
+		provider = new LinuxProvider();
+		provider.produce().draw();
 	}
 }
 
-
-interface Sender
+interface OperateFun
 {
-	public void send();
+	public void draw();
+	public void write();
 }
 
-class Mail implements Sender
-{
-	@Override
-	public void send()
-	{
-		System.out.println("Mail");
-	}
-}
-class SMS implements Sender
+class Win implements OperateFun
 {
 	@Override
-	public void send()
+	public void draw()
 	{
-		System.out.println("SMS");
+		System.out.println("win draw");
+	}
+	@Override
+	public void write()
+	{
+		System.out.println("linux draw");
 	}
 }
 
+class Linux implements OperateFun
+{
+	@Override
+	public void draw()
+	{
+		System.out.println("linux draw");
+	}
 
-
+	@Override
+	public void write()
+	{
+		System.out.println("linux write");
+	}
+}
 
 interface Provider
 {
-	public Sender produce();
+	public OperateFun produce();
 }
 
-class MailProvider implements Provider
+class WinProvider implements Provider
 {
 	@Override
-	public Sender produce()
+	public OperateFun produce()
 	{
-		return new Mail();
+		return new Win();
 	}
 }
-class SMSProvider implements Provider
+class LinuxProvider implements Provider
 {
 	@Override
-	public Sender produce()
+	public OperateFun produce()
 	{
-		return new SMS();
+		return new Linux();
 	}
 }
 

@@ -1,9 +1,12 @@
 package yeah.cstriker1407.design_patterns;
 
+import yeah.cstriker1407.design_patterns.builder.BuilderTest;
+import yeah.cstriker1407.design_patterns.factory.abstractfactory.AbstractFactory1;
 import yeah.cstriker1407.design_patterns.singleton.Singleton_doublecheck;
 import yeah.cstriker1407.design_patterns.singleton.Singleton_enum;
 import yeah.cstriker1407.design_patterns.singleton.Singleton_hungry;
 import yeah.cstriker1407.design_patterns.singleton.Singleton_lazy;
+import yeah.cstriker1407.design_patterns.template.TemplateTest;
 
 public class Main 
 {
@@ -24,6 +27,15 @@ public class Main
 		System.out.println("enum");
 		Singleton_enum.INSTANCE.sayHello();
 		
+		/* factory */
+		System.out.println("factory");
+		AbstractFactory1.test();
 		
+		/* templates */
+		TemplateTest.test();
+		
+		/* Builder */
+		System.out.println("Builder");
+		BuilderTest.test();
 	}
 }
