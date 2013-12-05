@@ -2,6 +2,7 @@ package yeah.cstriker1407.design_patterns;
 
 import yeah.cstriker1407.design_patterns.builder.BuilderTest;
 import yeah.cstriker1407.design_patterns.factory.abstractfactory.AbstractFactory1;
+import yeah.cstriker1407.design_patterns.observe.ObserveTest;
 import yeah.cstriker1407.design_patterns.singleton.Singleton_doublecheck;
 import yeah.cstriker1407.design_patterns.singleton.Singleton_enum;
 import yeah.cstriker1407.design_patterns.singleton.Singleton_hungry;
@@ -45,6 +46,9 @@ public class Main
 		LiftStates.normal();
 		LiftStates.test();
 		
+		
+		/* Observer */
+		ObserveTest.test();
 		
 	}
 }
