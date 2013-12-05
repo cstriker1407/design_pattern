@@ -6,6 +6,7 @@ import yeah.cstriker1407.design_patterns.singleton.Singleton_doublecheck;
 import yeah.cstriker1407.design_patterns.singleton.Singleton_enum;
 import yeah.cstriker1407.design_patterns.singleton.Singleton_hungry;
 import yeah.cstriker1407.design_patterns.singleton.Singleton_lazy;
+import yeah.cstriker1407.design_patterns.state.LiftStates;
 import yeah.cstriker1407.design_patterns.template.TemplateTest;
 
 public class Main 
@@ -37,5 +38,13 @@ public class Main
 		/* Builder */
 		System.out.println("Builder");
 		BuilderTest.test();
+		
+		
+		/* Builder */
+		System.out.println("State");
+		LiftStates.normal();
+		LiftStates.test();
+		
+		
 	}
 }
