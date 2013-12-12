@@ -1,5 +1,6 @@
 package yeah.cstriker1407.design_patterns;
 
+import yeah.cstriker1407.design_patterns.bridge.BridgeTest;
 import yeah.cstriker1407.design_patterns.builder.BuilderTest;
 import yeah.cstriker1407.design_patterns.factory.abstractfactory.AbstractFactory1;
 import yeah.cstriker1407.design_patterns.observe.ObserveTest;
@@ -54,5 +55,9 @@ public class Main
 		
 		/* Responsechain */
 		ResponsechainTest.test();
+		
+		
+		/* bridge test */
+		BridgeTest.test();
 	}
 }
