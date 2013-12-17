@@ -1,7 +1,12 @@
 package yeah.cstriker1407.design_patterns;
 
+import java.util.ArrayList;
+import java.util.List;
+
+import yeah.cstriker1407.design_patterns.Composite.CompositeTest;
 import yeah.cstriker1407.design_patterns.bridge.BridgeTest;
 import yeah.cstriker1407.design_patterns.builder.BuilderTest;
+import yeah.cstriker1407.design_patterns.decorator.DecoratorTest;
 import yeah.cstriker1407.design_patterns.factory.abstractfactory.AbstractFactory1;
 import yeah.cstriker1407.design_patterns.observe.ObserveTest;
 import yeah.cstriker1407.design_patterns.responsechain.ResponsechainTest;
@@ -59,5 +64,49 @@ public class Main
 		
 		/* bridge test */
 		BridgeTest.test();
+		
+		
+		/* Composite Test */
+		CompositeTest.test();
+		
+		/* Decorator Test */
+		DecoratorTest.test();
+	}
+	
+	class Person
+	{
+		public int id;
+		public List<Integer> datiqingkuang;
+		public int success;
+		public int fails;
+		public int score;
+		public int paiming;
+	}
+	
+	//N个参赛选手和T个题目
+	private void test(int N, int T)
+	{
+		List<Person> list = new ArrayList<Person>();
+		for (int i = 0; i < N; i++)
+		{
+			Person person = new Person();
+			person.id = i;
+			list.add(person);
+		}
+		int [] timuFenzhi = new int[T];
+		for (int i = 0; i < T; i++)
+		{
+			for (int j = 0; j < N; j++)
+			{
+				timuFenzhi[i] += list.get(j).datiqingkuang.get(i);
+			}
+		}
+		for (int i = 0; i < N; i++)
+		{
+			for (int j = 0; j < T; j++)
+			{
+				list.get(i).score += list.get(i).datiqingkuang.get(j) * timuFenzhi[j];
+			}
+		}
 	}
 }
