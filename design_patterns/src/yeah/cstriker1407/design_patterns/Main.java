@@ -8,6 +8,8 @@ import yeah.cstriker1407.design_patterns.bridge.BridgeTest;
 import yeah.cstriker1407.design_patterns.builder.BuilderTest;
 import yeah.cstriker1407.design_patterns.decorator.DecoratorTest;
 import yeah.cstriker1407.design_patterns.factory.abstractfactory.AbstractFactory1;
+import yeah.cstriker1407.design_patterns.interpreter.InterpreterTest;
+import yeah.cstriker1407.design_patterns.mediator.MediatorTest;
 import yeah.cstriker1407.design_patterns.observe.ObserveTest;
 import yeah.cstriker1407.design_patterns.responsechain.ResponsechainTest;
 import yeah.cstriker1407.design_patterns.singleton.Singleton_doublecheck;
@@ -71,6 +73,14 @@ public class Main
 		
 		/* Decorator Test */
 		DecoratorTest.test();
+		
+		
+		/* MediatorTest test */
+		MediatorTest.test();
+		
+		/* Interpreter test */
+		InterpreterTest.test();
+		
 	}
 	
 	class Person
