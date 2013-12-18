@@ -2,19 +2,16 @@ package yeah.cstriker1407.design_patterns.facade;
 
 public class FacadeTest
 {
-	
 	public static void test()
 	{
 		Person person = new Person();
 		person.write("hello");
 		person.send("Nanjing");
 		
-		
 		PostOffice office = new PostOffice();
 		office.sendLetter("Hello", "Nanjing");
 	}
 }
-
 
 interface LetterPost
 {
@@ -37,8 +34,6 @@ class Person implements LetterPost
 		System.out.println("addr:" + addresss);
 	}
 }
-
-
 
 class PostOffice
 {

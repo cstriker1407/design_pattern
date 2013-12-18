@@ -21,10 +21,7 @@ public class CompositeTest
 		
 		A11.addCrop(B21);
 		A12.addCrop(B22).addCrop(B23);
-		
-		
 		A01.info();
-		
 	}
 }
 class Leaf extends Crop
@@ -87,8 +84,4 @@ abstract class Crop
 			}
 		}
 	}
-	
 }
-
-
-

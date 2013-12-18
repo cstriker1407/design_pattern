@@ -41,7 +41,6 @@ class MyObserver implements Observer
 
 	private String name;
 	
-	
 	@Override
 	public void update(Observable o, Object arg)
 	{

@@ -16,6 +16,5 @@ public class BridgeTest
 		Mp3 mp3 = new Mp3();
 		SanzaiFactory sanzaiFactory = new SanzaiFactory(mp3);
 		sanzaiFactory.makeMoney();
-		
 	}
 }

@@ -59,8 +59,6 @@ class ChainHandler2 extends ChainHandler
 	}
 }
 
-
-
 abstract class ChainHandler
 {
 	private int maxNum;
